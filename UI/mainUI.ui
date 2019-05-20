@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>882</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>741</width>
+      <height>541</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>882</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionopen"/>
+    <addaction name="action_export"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>生成</string>
+    </property>
+    <addaction name="actionregular_graph"/>
+    <addaction name="actionrandom_graph"/>
+    <addaction name="actionsmall_world"/>
+    <addaction name="actionBA"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>分析指标</string>
+    </property>
+    <addaction name="actiondegreeDis"/>
+    <addaction name="actiondeg_reeCentrality"/>
+    <addaction name="actiondegreeBetwenness"/>
+    <addaction name="actionClosenessCentrality"/>
+    <addaction name="actionClustering"/>
+    <addaction name="actionAverage_shortest_path_length"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>样式</string>
+    </property>
+    <widget class="QMenu" name="layout">
+     <property name="title">
+      <string>节点布局</string>
+     </property>
+     <addaction name="actioncircular_layout"/>
+     <addaction name="actionrandom_layout"/>
+     <addaction name="actionshell_layout"/>
+     <addaction name="actionspring_layout"/>
+     <addaction name="actionspectral_layout"/>
+    </widget>
+    <addaction name="actionNodeLable"/>
+    <addaction name="layout"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+   <addaction name="menu_4"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionopen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+  </action>
+  <action name="actionrandom_graph">
+   <property name="text">
+    <string>ER随机图</string>
+   </property>
+  </action>
+  <action name="actionsmall_world">
+   <property name="text">
+    <string>WS小世界网络</string>
+   </property>
+  </action>
+  <action name="action_export">
+   <property name="text">
+    <string>导出</string>
+   </property>
+  </action>
+  <action name="actionregular_graph">
+   <property name="checkable">
+    <bool>false</bool>
+   </property>
+   <property name="text">
+    <string>规则图</string>
+   </property>
+  </action>
+  <action name="actiondegreeDis">
+   <property name="text">
+    <string>度分布</string>
+   </property>
+  </action>
+  <action name="actiondeg_reeCentrality">
+   <property name="text">
+    <string>度中心性</string>
+   </property>
+  </action>
+  <action name="actiondegreeBetwenness">
+   <property name="text">
+    <string>介数中心性</string>
+   </property>
+  </action>
+  <action name="actionBA">
+   <property name="text">
+    <string>BA无标度网络</string>
+   </property>
+  </action>
+  <action name="actionClosenessCentrality">
+   <property name="text">
+    <string>紧密中心性</string>
+   </property>
+  </action>
+  <action name="actionClustering">
+   <property name="text">
+    <string>群聚系数</string>
+   </property>
+  </action>
+  <action name="actionAverage_shortest_path_length">
+   <property name="text">
+    <string>平均最短距离</string>
+   </property>
+  </action>
+  <action name="actionNodeLable">
+   <property name="text">
+    <string>显示节点标签 </string>
+   </property>
+  </action>
+  <action name="actioncircular_layout">
+   <property name="text">
+    <string>circular_layout</string>
+   </property>
+  </action>
+  <action name="actionrandom_layout">
+   <property name="text">
+    <string>random_layout</string>
+   </property>
+  </action>
+  <action name="actionshell_layout">
+   <property name="text">
+    <string>shell_layout</string>
+   </property>
+  </action>
+  <action name="actionspring_layout">
+   <property name="text">
+    <string>spring_layout</string>
+   </property>
+  </action>
+  <action name="actionspectral_layout">
+   <property name="text">
+    <string>spectral_layout</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
